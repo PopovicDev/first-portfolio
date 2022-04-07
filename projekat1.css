@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100vh;
+	background-color: rgb(34,34,34);
+}
+
+li, a, button{
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 100%;
+	height: 80px;
+	padding: 3rem 3rem;
+	background-color: rgb(31,31,31);
+}
+
+.nav-logo{
+	cursor: pointer;
+}
+
+.nav-links{
+	list-style: none;
+}
+
+.nav-links li{
+	display: inline-block;
+	padding: 0 3rem;
+}
+
+.nav-links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+	color: rgb(143, 201, 111);
+}
+
+button{
+	padding: 9px 25px;
+	background-color: rgba(143, 201, 111,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover{
+	background-color: rgba(143, 201, 111,0.8);
+}
+
+.first-page{
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 100%;
+	height: 90%;
+	background-image: url('first_bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.intro{
+	position: relative;
+	width: 22ch;
+	left: 5%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	color: white;
+}
+
+.intro p{
+	font-family: "Montserrat", sans-serif;
+	padding-top: 5px;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+.intro-right{
+	position: relative;
+	width: 5.3ch;
+	right: 25%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 6rem;
+	color: white;
+}
+
+.second-page{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-basis: 100%;
+	height: 100%;
+}
+
+.second-page h1{
+	text-shadow: 1px 1px 5px black;
+	top: 3rem;
+	letter-spacing: 15px;
+	font-size: 3rem;
+	padding-top: 50px;
+	font-family: 'Bebas Neue', cursive;
+	font-family: "Montserrat", sans-serif;
+	color: rgb(143, 201, 111);
+}
+
+.about-me{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+}
+
+.about-me img{
+	flex-basis: 10%;
+	height: 530px;
+	box-shadow: 0 5px 15px black;
+	cursor: pointer;
+}
+
+.about-me img:hover{
+	transform: scale(1.1);
+	transition: all 0.3s ease 0s;
+}
+
+.about-me p{
+	flex-basis: 90%;
+	display: block;
+	padding-left: 50px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	letter-spacing: 2px;
+	width: 25ch;
+	color: white;
+	flex-flow: wrap;
+}
+
+.about-me p::first-letter{
+	font-size: 4rem;
+	color: rgb(143, 201, 111);
+}
+
+.bar{
+	width: 100%;
+	height: 80px;
+	background-image: url('code.jpg');
+	background-size: cover;
+	background-position: center;
+	filter: blur(5px);
+	margin: 30px 0;
+}
+
+.third-page h2{
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+}
+
+.third-page img{
+	height: 200px;
+	border: 1px solid white;
+	box-shadow: 0 3px 8px black;
+}
+
+.third-page h2{
+	letter-spacing: 15px;
+	font-size: 3rem;
+	font-family: "Montserrat", sans-serif;
+	color: rgb(143, 201, 111);
+}
+
+.grid{
+	display: grid;
+	place-content: center;
+	place-items: center;
+	gap: 1rem;
+	grid-template-columns:
+	 repeat(auto-fit, 200px);
+	padding:50px 0;
+}
+
+.grid img{
+	cursor: pointer;
+}
+
+.grid figcaption{
+	padding-top: 2px;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+}
+
+.grid figure:hover{
+	transform: scale(1.5);
+	transition: all 0.3s ease 0s;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+	height: 50px;
+	padding: 3rem 3rem;
+	background-color: rgb(31,31,31);
+	color: white;
+	font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 1088px){
+	.first-page{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.intro{
+		left: 0;
+	}
+
+	.intro-right{
+		right: 0;
+	}
+}
+
+@media (max-width: 986px){
+	header{
+		flex-direction: column;
+		height: 250px;
+		padding: 0;
+	}
+
+	.nav-links li{
+		display: flex;
+		padding: 5px 0;
+	}
+
+	button{
+		margin: 20px 0;
+	}
+}
+
+@media (max-width: 788px){
+	.second-page{
+		height: 110%;
+	}
+
+	.about-me{
+		flex-direction: column;
+	}
+
+	.about-me p{
+		margin: 20px 0;
+	}
+}
+
+@media (max-width: 458px){
+	.intro{
+		font-size: 1.5rem;
+	}
+
+	.about-me img{
+		height: auto;
+		width: 360px;
+	}
+}
