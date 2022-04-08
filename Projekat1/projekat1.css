@@ -167,6 +167,7 @@ button:hover{
 }
 
 .bar{
+	position: relative;
 	width: 100%;
 	height: 80px;
 	background-image: url('code.jpg');
@@ -287,5 +288,68 @@ footer{
 	.about-me img{
 		height: auto;
 		width: 360px;
+	}
+}
+
+@media (max-height: 1003px){
+	.second-page{
+		padding-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-height: 953px){
+	.second-page{
+		padding-top: 100px;
+		margin-bottom: 100px;
+	}
+}
+
+@media (max-height: 908px){
+	.second-page{
+		padding-top: 150px;
+		margin-bottom: 150px;
+	}
+}
+
+@media (max-height: 864px){
+	.second-page{
+		padding-top: 200px;
+		margin-bottom: 200px;
+	}
+}
+
+@media (max-height: 816px){
+	.second-page{
+		padding-top: 250px;
+		margin-bottom: 250px;
+	}
+}
+
+@media (max-height: 766px){
+	.second-page{
+		padding-top: 300px;
+		margin-bottom: 300px;
+	}
+}
+
+@media (max-height: 726px){
+	.second-page{
+		padding-top: 350px;
+		margin-bottom: 350px;
+	}
+}
+
+@media (max-height: 682px){
+	.second-page{
+		padding-top: 400px;
+		margin-bottom: 400px;
+	}
+}
+
+@media (max-height: 637px){
+	.second-page{
+		padding-top: 450px;
+		margin-bottom: 450px;
 	}
 }
