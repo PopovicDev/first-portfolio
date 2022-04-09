@@ -1,28 +1,30 @@
 <html>
 	<head>
-		<title></title>
+		<title>Portfolio - Projekat1</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="projekat1.css">
+		<link rel="stylesheet" type="text/css" href="file:///D:/%23%20WEB%20DEVELOPMENT%20-%20HTML%20&%20CSS/fontawesome-free-6.1.1-web/css/all.css">
+		<link rel="icon" href="favicon.png">
 	</head>
 	<body>
-		<header id="pocetak">
+		<header id="pocetak" class="pocetak">
 			<a href="#pocetak"><img src="logo.png" alt="nav-logo" class="nav-logo"></a>
 			<nav>
 				<ul class="nav-links">
 					<li><a href="#o-meni">O meni</a></li>
 					<li><a href="#galerija">Galerija</a></li>
-					<li><a href="#">Kontakt</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
 				</ul>
 			</nav>
-			<a href="#"><button>POSALJI MI E-MAIL</button></a>
+			<a href="mailto:poppovic.contact@gmail.com"><button>POSALJI MI E-MAIL</button></a>
 		</header>
 		<main>
 			<section class="first-page">
 				<div class="intro">
 					<h1>Milan Popović</h1>
 					<h3>Front <span style="color: rgb(143, 201, 111);">W</span>eb Developer</h3>
-					<hr color=#8fc96f>
+					<hr color=gold>
 					<p>Imam <span style="color: rgb(143, 201, 111);">16</span> godina, pocetnik sam u svetu <span style="color: rgb(143, 201, 111);">Web Developmenta</span> i cilj mi je da konstantno unapredjujem znanje i kroz razne projekte pokazujem sta znam!</p>
 				</div>
 				<div class="intro-right">
@@ -37,19 +39,92 @@
 				</div>
 			</section>
 			<section class="bar">
+				<h3>Ne zaboravi da posaljes e-mail o misljenju u vezi website-a!</h3>
+				<a href="mailto:poppovic.contact@gmail.com"><button>POSALJI MI E-MAIL</button></a>
 			</section>
 			<section class="third-page" id="galerija">
 				<h2>GALERIJA</h2>
 					<div class="grid">
 						<figure><img src="slika2.jpg"><figcaption>Avala, 2021</figcaption></figure>
-						<figure><img src="slika3.jpg"><figcaption>Radinac, 2021</figcaption></figure>
-						<figure><img src="slika4.jpg"><figcaption>Radinac, 2022</figcaption></figure>
-						<figure><img src="slika5.jpg"><figcaption>Radinac, 2022</figcaption></figure>
+						<figure><img src="slika3.jpg"><figcaption>Okolina Smedereva, 2021</figcaption></figure>
+						<figure><img src="slika4.jpg"><figcaption>Okolina Smedereva, 2022</figcaption></figure>
+						<figure><img src="slika5.jpg"><figcaption>Okolina Smedereva, 2022</figcaption></figure>
 					</div>
+			</section>
+			<section class="bar2" id="kontakt">
+				<hr width=50% color=#d7cd84 style="height:3px; margin-right: auto;"><br>
+				<hr width=50% color=#d7cd84 style="height:3px; margin-right: auto; margin-left:auto;"><br>
+				<hr width=50% color=#d7cd84 style="height:3px; margin-left: auto;"><br>
+			</section>
+			<section class="fourth-page">
+				<h2>KONTAKT</h2>
+				<section class="_kontakt">
+					<section class="leftside">
+						<h3><i class="fa-solid fa-phone"></i>+381 65 31415 98</h3>
+						<h3><i class="fa-solid fa-envelope"></i>poppovic.contact@gmail.com</h3>
+						<h3><i class="fa-brands fa-discord"></i>Discord: Popovic#5496</h3>
+						<h3><i style="width:35px; text-align:center" class="fa-solid fa-location-pin"></i>Srbija, Smederevo</h3>
+					</section>
+					<section class="middle">
+						<section class="vb2">
+						</section>
+					</section>
+					<section class="rightside">
+						<form>
+							<label for="ime">Tvoje ime</label><br>
+							<input type="text" name="ime" size=26 maxlength=25 id="ime" required><br><br>
+							<label for="e-mail">Tvoj e-mail</label><br>
+							<input type="email" name="e-mail" id="e-mail" size=26 required><br><br>
+							<label for="tekst">Tvoja poruka</label><br>
+							<textarea cols=40 rows=10 id="tekst" required></textarea><br><br>
+							<button type="submit">POSALJI</button>
+						</form>
+					</section>
+				</section>
+			</section>
+			<section class="bar2">
+				<hr width=50% color=#d7cd84 style="height:3px; margin-right: auto;"><br>
+				<hr width=50% color=#d7cd84 style="height:3px; margin-right: auto; margin-left:auto;"><br>
+				<hr width=50% color=#d7cd84 style="height:3px; margin-left: auto;"><br>
 			</section>
 		</main>
 		<footer>
-			<h5>Copyright by Milan Popovic</h5>
+			<hr class="linija">
+			<section class="tekst">
+				<h4>Milan Popovic</h4>
+			</section>
+			<div class="vb"></div>
+			<nav>
+				<ul class="nav_links">
+					<h3>Bitni linkovi</h3>
+					<hr style="margin-bottom:5px">
+					<li><a href="#pocetak">Pocetak</a></li>
+					<li><a href="#o-meni">O meni</a></li>
+					<li><a href="#galerija">Galerija</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
+				</ul>
+			</nav>
+			<ul class="kontakt">
+					<h3>Kontakt info</h3>
+					<hr style="margin-bottom:5px">
+					<li>+381 65 31415 98</li>
+					<li>poppovic.contact@gmail.com</li>
+					<li>Discord: Popovic#5496</li>
+					<li>Srbija, Smederevo</li>
+			</ul>
+			<ul class="drustvene_mreze">
+					<h3>Drustvene mreze</h3>
+					<hr style="margin-bottom:5px">
+					<li><a href="https://www.youtube.com/channel/UCV12feLx8ZBeJsE1j0IJffw">Youtube</a></li>
+					<li><a href="https://www.instagram.com/popovicc0/">Instagram</a></li>
+					<li><a href="https://steamcommunity.com/id/pop14/">Steam</a></li>
+					<li><a href="https://github.com/PopovicDev/popovicdev.github.io">Github</a></li>
+			</ul>
+			<div class="vb"></div>
+			<section class="tekst">
+				<h4>Front Web Developer</h4>
+			</section>
+			<hr class="linija">
 		</footer>
 	</body>
 </html>

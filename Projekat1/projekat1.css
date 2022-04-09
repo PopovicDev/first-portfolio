@@ -8,8 +8,14 @@
 	padding: 0;
 }
 
+::selection {
+	color: white;
+	background: black;
+}
+
 html{
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 body{
@@ -17,12 +23,33 @@ body{
 	background-color: rgb(34,34,34);
 }
 
-li, a, button{
+li, a{
 	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	color: #edf0f1;
 	text-decoration: none;
+}
+
+.pocetak button,
+.bar button{
+	padding: 9px 25px;
+	background-color: rgba(143, 201, 111,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+.pocetak button:hover,
+.bar button:hover,
+._kontakt button:hover{
+	background-color: rgba(143, 201, 111,0.8);
 }
 
 header{
@@ -53,20 +80,7 @@ header{
 }
 
 .nav-links li a:hover {
-	color: rgb(143, 201, 111);
-}
-
-button{
-	padding: 9px 25px;
-	background-color: rgba(143, 201, 111,1);
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-}
-
-button:hover{
-	background-color: rgba(143, 201, 111,0.8);
+	color: gold;
 }
 
 .first-page{
@@ -89,6 +103,10 @@ button:hover{
 	font-family: 'Poppins', sans-serif;
 	font-size: 2rem;
 	color: white;
+}
+
+.intro h1{
+	font-size: 3.5rem;
 }
 
 .intro p{
@@ -120,10 +138,9 @@ button:hover{
 .second-page h1{
 	text-shadow: 1px 1px 5px black;
 	top: 3rem;
-	letter-spacing: 15px;
+	letter-spacing: 10px;
 	font-size: 3rem;
 	padding-top: 50px;
-	font-family: 'Bebas Neue', cursive;
 	font-family: "Montserrat", sans-serif;
 	color: rgb(143, 201, 111);
 }
@@ -139,8 +156,13 @@ button:hover{
 .about-me img{
 	flex-basis: 10%;
 	height: 530px;
-	box-shadow: 0 5px 15px black;
 	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	border-radius: 10px;
+}
+
+.about-me img:hover{
+	box-shadow: 0 5px 15px black;
 }
 
 .about-me img:hover{
@@ -167,14 +189,34 @@ button:hover{
 }
 
 .bar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	position: relative;
 	width: 100%;
 	height: 80px;
-	background-image: url('code.jpg');
-	background-size: cover;
-	background-position: center;
-	filter: blur(5px);
+	background-color: rgb(31,31,31);
 	margin: 30px 0;
+	margin-bottom: 60px;
+	padding: 50px 0;
+	border: 2px solid #d7cd84;
+	border-style: solid none;
+	color: white;
+	text-align: center;
+}
+
+.bar button{
+	margin-top: 5px;
+}
+
+.bar h3{
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.25rem;
+}
+
+.third-page{
+	min-height: 65%;
 }
 
 .third-page h2{
@@ -183,16 +225,25 @@ button:hover{
 }
 
 .third-page img{
-	height: 200px;
+	height: 400px;
 	border: 1px solid white;
+	border-radius: 7px;
+}
+
+.third-page img:hover{
 	box-shadow: 0 3px 8px black;
 }
 
 .third-page h2{
-	letter-spacing: 15px;
+	letter-spacing: 10px;
 	font-size: 3rem;
 	font-family: "Montserrat", sans-serif;
 	color: rgb(143, 201, 111);
+}
+
+.third-page figure:hover{
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
 .grid{
@@ -201,7 +252,7 @@ button:hover{
 	place-items: center;
 	gap: 1rem;
 	grid-template-columns:
-	 repeat(auto-fit, 200px);
+	 repeat(auto-fit, 400px);
 	padding:50px 0;
 }
 
@@ -213,6 +264,11 @@ button:hover{
 	padding-top: 2px;
 	color: white;
 	font-family: "Montserrat", sans-serif;
+	font-size: 0.950rem;
+}
+
+.grid figure{
+	transition: all 0.3s ease 0s;
 }
 
 .grid figure:hover{
@@ -220,16 +276,328 @@ button:hover{
 	transition: all 0.3s ease 0s;
 }
 
+.vb{
+	border: 1.5px solid #d7cd84;
+	height: 150px;
+	background-color: #d7cd84;
+}
+
+.tekst{
+	text-align: center;
+	margin: 0 30px;
+}
+
+.bar2{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+}
+
+.fourth-page{
+	height: 50%;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.fourth-page h2{
+	letter-spacing: 10px;
+	font-size: 3rem;
+	font-family: "Montserrat", sans-serif;
+	color: rgb(143, 201, 111);
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+._kontakt{
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.leftside{
+	margin-left: 550px;
+}
+
+.leftside h3{
+	color: white;
+	background-color: #777777;
+	padding: 10px;
+	border-radius: 30px;
+	margin-bottom: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.85rem;
+	width: 270px;
+}
+
+.leftside i{
+	color: gold;
+	background-color: #b2b2b2;
+	padding: 10px;
+	border-radius: 30px;
+	margin-right: 5px;
+}
+
+.vb2{
+	border: 5px solid white;
+	height: 500px;
+	background-color: white;
+	border-radius: 10px;
+	margin: 0 100px;
+}
+
+.rightside{
+	margin-right: 500px;
+}
+
+.rightside input{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 130px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.rightside input[type=text]{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.rightside input[type=e-mail]{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.rightside label{
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.950rem;
+}
+
+.rightside textarea{
+	border: 1px solid black;
+	border-radius: 10px;
+	outline: none;
+	color: black;
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.950rem;
+	padding: 5px;
+	resize: none;
+}
+
+
+.rightside button{
+	padding: 9px 25px;
+	background-color: rgba(143, 201, 111,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
 footer{
 	display: flex;
-	justify-content: center;
+	position: sticky;
+	justify-content: space-between;
 	align-items: center;
 	flex-basis: 100%;
-	height: 50px;
-	padding: 3rem 3rem;
+	height: 180px;
+	padding: 3rem 0rem;
 	background-color: rgb(31,31,31);
 	color: white;
 	font-family: "Montserrat", sans-serif;
+}
+
+.nav_links{
+	display: flex;
+	flex-direction: column;
+	margin: 0 30px;
+}
+
+.nav_links li{
+	list-style: none;
+	padding: 3px 0;
+}
+
+.nav_links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+	color: gold;
+}
+
+.drustvene_mreze{
+	display: flex;
+	flex-direction: column;
+	margin: 0 30px;
+}
+
+.drustvene_mreze li{
+	list-style: none;
+	padding: 3px 0;
+}
+
+.drustvene_mreze li a {
+	transition: all 0.3s ease 0s;
+}
+
+.drustvene_mreze li a:hover {
+	color: gold;
+}
+
+.kontakt{
+	display: flex;
+	flex-direction: column;
+	margin: 0 30px;
+}
+
+.kontakt h3{
+	margin-top: 23px;
+}
+
+.kontakt li{
+	list-style: none;
+	padding: 3px 0;
+}
+
+.linija{
+	width: 22%;
+	background-color: #d7cd84;
+	height: 3px;
+	border: none;
+}
+
+@media (max-width: 916px){
+	.linija{
+		display: none;
+	}
+}
+
+@media (max-width: 883px){
+	.vb2{
+		margin: 0 50px;
+	}
+
+	footer{
+		font-size: 0.85rem;
+	}
+}
+
+@media (max-width: 800px){
+	footer{
+		text-align: center;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.vb{
+		height: 0;
+		width: 500px;
+		margin: 20px 0;
+	}
+
+	footer nav{
+		flex-direction: row;
+		width: 300px;
+	}
+
+	.kontakt{
+		margin-bottom: 20px;
+	}
+
+	.drustvene_mreze{
+		width: 250px;
+	}
+
+	.fourth-page{
+		height: 75%;
+	}
+
+	.fourth-page h2{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	._kontakt{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.leftside{
+		margin: 30px 0;
+	}
+
+	.rightside{
+		margin: 30px 0;
+	}
+
+	.vb2{
+		height: 0;
+		width: 500px;
+	}
+}
+
+@media (max-width: 605px){
+	.bar{
+	display: flex;
+	place-items: center;
+	place-content: center;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: 80px;
+	background-color: rgb(31,31,31);
+	margin: 30px 0;
+	margin-bottom: 60px;
+	padding: 50px 0;
+	border: 2px solid #d7cd84;
+	border-style: solid none;
+	color: white;
+	}
+
+	.bar button{
+	margin-top: 5px;
+	}
+
+	.bar h3{
+	font-size: 1.1rem;
+	}
+
+	.vb2{
+		width: 400px;
+	}
+}
+
+@media (max-width: 513px){
+	.bar h3{
+	font-size: 0.9rem;
+	}
+
+	.vb{
+		width: 400px;
+	}
+
+	.vb2{
+		width: 300px;
+	}
+}
+
+@media (max-width: 412px){
+	.vb{
+		width: 200px;
+	}
+
+	.vb2{
+		width: 200px;
+	}
 }
 
 @media (max-width: 1088px){
@@ -351,5 +719,29 @@ footer{
 	.second-page{
 		padding-top: 450px;
 		margin-bottom: 450px;
+	}
+}
+
+@media (max-height: 1094px){
+	.fourth-page{
+		margin-bottom: 200px;
+	}
+}
+
+@media (max-height: 964px){
+	.fourth-page{
+		margin-bottom: 300px;
+	}
+}
+
+@media (max-height: 829px){
+	.fourth-page{
+		margin-bottom: 400px;
+	}
+}
+
+@media (max-height: 694px){
+	.fourth-page{
+		margin-bottom: 500px;
 	}
 }
