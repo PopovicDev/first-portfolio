@@ -402,6 +402,12 @@ header{
 	text-decoration: none;
 }
 
+footer hr{
+	background-color: white;
+	border: none;
+	height: 2px;
+}
+
 footer{
 	display: flex;
 	position: sticky;
