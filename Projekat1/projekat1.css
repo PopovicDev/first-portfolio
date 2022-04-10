@@ -663,6 +663,9 @@ footer{
 @media (max-width: 458px){
 	.intro{
 		font-size: 1.5rem;
+	}
+
+	.first-page{
 		text-align: center;
 	}
 
