@@ -53,7 +53,7 @@ li, a{
 
 body header{
 	position: sticky;
-	top: 0px;
+	top: 0;
 	z-index: 9999;
 }
 
@@ -663,6 +663,7 @@ footer{
 @media (max-width: 458px){
 	.intro{
 		font-size: 1.5rem;
+		text-align: center;
 	}
 
 	.about-me img{
